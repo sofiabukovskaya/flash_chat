@@ -18,6 +18,7 @@ class FlashChat extends StatelessWidget {
         textTheme: const TextTheme(
           bodyText1: TextStyle(color: Colors.black54),
         ),
+        hintColor: Colors.black54,
       ),
       debugShowCheckedModeBanner: false,
       initialRoute: WelcomeScreen.id,
