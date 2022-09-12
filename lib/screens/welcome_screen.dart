@@ -55,20 +55,22 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                     height: 60.0,
                   ),
                 ),
-                AnimatedTextKit(
-                  animatedTexts: [
-                    TypewriterAnimatedText(
-                      'Flash Chat',
-                      speed: const Duration(
-                        milliseconds: 350,
-                      ),
-                      textStyle: const TextStyle(
-                        fontSize: 45.0,
-                        fontWeight: FontWeight.w900,
-                        color: Colors.black54,
-                      ),
-                    )
-                  ],
+                Expanded(
+                  child: AnimatedTextKit(
+                    animatedTexts: [
+                      TypewriterAnimatedText(
+                        'Flash Chat',
+                        speed: const Duration(
+                          milliseconds: 350,
+                        ),
+                        textStyle: const TextStyle(
+                          fontSize: 45.0,
+                          fontWeight: FontWeight.w900,
+                          color: Colors.black54,
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ],
             ),
@@ -97,5 +99,3 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     );
   }
 }
-
-
